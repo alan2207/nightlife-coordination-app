@@ -1,0 +1,45 @@
+body {
+    background-color: #EFEBE9;
+}
+
+#main-wrapper {
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-bottom: 100px;
+}
+
+.results {
+  
+  overflow-y: scroll;  
+  width: 65%;
+  height: 60vh;
+  float: left;
+}
+
+.map {
+  
+  width: 35%;
+  float: right;
+  height: 60vh;
+}
+
+.place-image {
+  height: 200px;
+  width: 300px;
+}
+
+.guests {
+  height: 6vh;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width : 961px){
+  .results, .map {
+    width: 100%;
+  }
+}

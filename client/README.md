@@ -1,0 +1,1 @@
+# Frontend for Nightlife Coordination App
