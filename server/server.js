@@ -12,7 +12,9 @@ mongoose.Promise = global.Promise;
 const app = express();
 
 // connecting to the db
-mongoose.connect(db);
+mongoose.connect(db, {
+    useMongoClient: true
+});
 
 // use express middlewares
 app.use(morgan('combined'));
@@ -27,4 +29,4 @@ router(app);
 // starting the server
 app.listen(process.env.PORT || port, function() {
     console.log('The server is running...')
-})
+});
